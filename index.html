@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SocioloGenius</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- Start of the navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">SocioloGenius</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/cours.html">Cours</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/fiche">Fiches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quizz">Quizz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of the navigation bar -->
+
+    <!-- Start of the main content -->
+    <main class="container-fluid p-0">
+      <!-- Hero section -->
+      <section
+        class="hero d-flex align-items-center justify-content-center text-center"
+      >
+        <div class="container">
+          <h1 class="display-4">Bienvenue sur SocioloGenius</h1>
+          <p class="lead">Votre plateforme gratuite de sociologie</p>
+          <a href="/cours" class="btn btn-primary btn-lg"
+            >Découvrir les cours</a
+          >
+        </div>
+      </section>
+
+      <!-- Discover section -->
+      <section class="discover my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2>Découvrir la sociologie</h2>
+              <p class="lead">
+                SocioloGenius se consacre à l'accessibilité de la sociologie
+                pour tous. Notre objectif est de vous fournir des ressources
+                gratuites et de qualité pour vous aider à appréhender les
+                concepts clés et les auteurs influents de la sociologie. Nous
+                croyons fermement que la compréhension de cette discipline peut
+                enrichir notre perception du monde et nous aider à développer un
+                esprit critique. Que vous soyez un étudiant, un professionnel,
+                un enseignant, ou simplement quelqu'un de curieux, nous espérons
+                que vous trouverez ici des outils précieux pour explorer et
+                comprendre les enjeux modernes de la sociologie. Rejoignez-nous
+                dans ce voyage de découverte de l'un des plus fascinants champs
+                d'étude de notre temps.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features section -->
+      <!-- Features section -->
+      <section class="features py-5 my-5">
+        <div class="container">
+          <div class="row">
+            <!-- Each feature is a column in the grid -->
+            <div class="col-lg-4 text-center">
+              <a href="/auteurs" class="text-decoration-none text-dark">
+                <i class="fas fa-users fa-6x"></i>
+                <h3>Découvrir les auteurs clés</h3>
+                <p>
+                  Explorez les contributions majeures des penseurs de la
+                  sociologie. Découvrez comment leurs idées ont façonné notre
+                  compréhension de la société.
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4 text-center">
+              <a href="/fiche" class="text-decoration-none text-dark">
+                <i class="fas fa-file-alt fa-6x"></i>
+                <h3>Obtenir des fiches synthétiques</h3>
+                <p>
+                  Révisez efficacement avec nos fiches synthétiques. Elles
+                  regroupent les informations clés sur les théories et concepts
+                  sociologiques.
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4 text-center">
+              <a href="/quizz" class="text-decoration-none text-dark">
+                <i class="fas fa-question-circle fa-6x"></i>
+                <h3>Des Quizz pour t'aider à réviser</h3>
+                <p>
+                  Testez vos connaissances avec nos quizz. Un moyen ludique et
+                  interactif pour consolider votre apprentissage en sociologie.
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="testimonials py-5 my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <h2>Ce que nos utilisateurs disent</h2>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <!-- Each testimonial is a column in the grid -->
+            <div class="col-lg-4 text-center">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Grâce à SocioloGenius, j'ai pu approfondir ma compréhension
+                  de la sociologie. Les fiches synthétiques sont incroyablement
+                  utiles pour réviser!"
+                </p>
+                <footer class="blockquote-footer">
+                  Julie, étudiante en sociologie
+                </footer>
+              </blockquote>
+            </div>
+            <div class="col-lg-4 text-center">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "Un excellent outil pour tous ceux qui s'intéressent à la
+                  sociologie. Les quizz sont particulièrement amusants et
+                  instructifs."
+                </p>
+                <footer class="blockquote-footer">Marc, enseignant</footer>
+              </blockquote>
+            </div>
+            <div class="col-lg-4 text-center">
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  "SocioloGenius offre un accès facile à la sociologie. C'est
+                  une ressource précieuse pour nourrir ma curiosité
+                  intellectuelle."
+                </p>
+                <footer class="blockquote-footer">Sophie, autodidacte</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- More content can be added here -->
+    </main>
+    <!-- End of the main content -->
+
+    <!-- Start of the footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+      <p>&copy; 2023 SocioloGenius. Tous droits réservés.</p>
+    </footer>
+    <!-- End of the footer -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
